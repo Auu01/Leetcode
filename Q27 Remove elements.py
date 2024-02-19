@@ -1,6 +1,8 @@
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
 
+        # Option 1: By using remove method
+        '''
         i = 0
         k = len(nums)
         while i < len(nums):
@@ -11,21 +13,18 @@ class Solution:
             else:
                 i += 1
         return k
+        '''
 
-        """
-        #Option 2 Need fix
-        i = 0
+        # Option 2: Double pointer, one points to the head of the array and one points to the end of the array.
+        # Traversed from front to back, when an element equal to target(val), replace it by the last element, and move the tail pointer forward one position.
+        # If the element not equal to the target, move the head pointer backward one position.
+
+        k = 0
         j = len(nums)
-        k = len(nums)
-        while i < j:
+        while k < j:
             if nums[i] == val:
-                if nums[j-1] != val:
-                    nums[i] = nums[j-1]
-                    k -= 1
-                    i += 1
-                else:
-                    j -= 1
+                nums[i] = nums[j - 1]
+                j -= 1
             else:
-                break     
+                k += 1
         return k
-        """
