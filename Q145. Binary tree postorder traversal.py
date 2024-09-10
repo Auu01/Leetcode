@@ -7,7 +7,7 @@
 class Solution:
     def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         result = []
-        #后序遍历：左右根
+        # Postorder Traversal: left, right, root
         if root:
             result.extend(self.postorderTraversal(root.left))
             result.extend(self.postorderTraversal(root.right))
