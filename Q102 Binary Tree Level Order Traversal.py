@@ -6,10 +6,7 @@
 #         self.right = right
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
-        # 两种方法：第一种是创建一个队列，然后通过计算当前队列的长度，这表示当前层中的节点数。为了存储这一层的所有节点值，创建一个空列表。根据当前层的节点数，进行循环：从队列中移除（deque）一个节点。将该节点的值添加到当前层的列表中。
-        #       第二种是通过函数计算出树的高度，然后使用高度作为循环条件来一层一层循环
-
-        # 方法1:
+        # 创建一个队列，然后通过计算当前队列的长度，这表示当前层中的节点数。为了存储这一层的所有节点值，创建一个空列表。根据当前层的节点数，进行循环：从队列中移除（deque）一个节点。将该节点的值添加到当前层的列表中。
         if not root:
             return []
 
@@ -31,4 +28,7 @@ class Solution:
             result.append(level_node)
 
         return result
+
+
+
 
