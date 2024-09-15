@@ -7,8 +7,6 @@
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         #使用递归找到左右子树的最大值
-        def maxdepth(root):
-            if not root:
-                return 0
-            return 1 + max(maxdepth(root.left), maxdepth(root.right))
-        return maxdepth(root)
+        if not root:
+            return 0
+        return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
