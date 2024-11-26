@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83942b1a-bf7c-4558-b3f0-64615cf3a87f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Q1. Two sum (Hash map).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,8 @@
       <updated>1727923131233</updated>
       <workItem from="1727923132923" duration="2000" />
       <workItem from="1729816695039" duration="222000" />
+      <workItem from="1730954661492" duration="56000" />
+      <workItem from="1732582715315" duration="39000" />
     </task>
     <servers />
   </component>
